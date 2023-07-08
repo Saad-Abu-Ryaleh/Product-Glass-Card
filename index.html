@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Glass Product Card</title>
+</head>
+<body>
+    <div class="container">
+        <ul class="thumb">
+            <li onmouseover="changeImageSrc('images/Shoes1.png')"> <img src="images/Shoes1.png" alt="#"> </li>
+            <li onmouseover="changeImageSrc('images/Shoes2.png')"> <img src="images/Shoes2.png" alt="#"> </li>
+            <li onmouseover="changeImageSrc('images/Shoes3.png')"> <img src="images/Shoes3.png" alt="#"> </li>
+        </ul>
+        <div class="imgBox">
+            <h2>Nike Wildhorse 7</h2>
+
+            <img src="images/Shoes1.png" alt="#" class="ImgChanger">
+
+            <ul class="size">
+                <span>Size</span>
+                <li>40</li>
+                <li>41</li>
+                <li>42</li>
+                <li>43</li>
+            </ul>
+            <a href="#" class="btn">Add To Cart</a>
+
+        </div>
+    </div>
+    <script>
+        function changeImageSrc(anything){
+            document.querySelector('.ImgChanger').src=anything;
+        }
+    </script>
+</body>
+</html>
